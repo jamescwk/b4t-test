@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Member Portal — B4T</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>try{if(localStorage.getItem('b4t_member')!=='1'){location.replace('index.html#members')}}catch(e){location.replace('index.html#members')}</script>
+<style>
+.portal-grid{display:grid;grid-template-columns:240px 1fr;gap:32px;align-items:start}
+.side{position:sticky;top:96px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px}
+.side a{display:block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:500;font-size:.93rem}
+.side a:hover,.side a.active{background:var(--bg-soft)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:20px}
+.panel h3{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.row:last-child{border-bottom:0}
+@media (max-width:860px){.portal-grid{grid-template-columns:1fr}.side{position:static;display:flex;overflow-x:auto}}
+</style>
+</head>
+<body style="background:var(--bg-soft)">
+<div class="proto-banner">Prototype member portal — all content below is placeholder.</div>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark">B4T</span><span>Member Portal<small>Confidential — do not share</small></span></a>
+    <div class="nav-actions">
+      <a href="index.html" class="btn btn-ghost btn-sm">← Public site</a>
+      <button class="btn btn-dark btn-sm" onclick="try{localStorage.removeItem('b4t_member')}catch(e){};location.href='index.html'">Sign out</button>
+    </div>
+  </div>
+</header>
+<main class="section" style="padding-top:48px">
+  <div class="container">
+    <span class="eyebrow">Welcome back</span>
+    <h1 style="font-size:2.4rem">Member dashboard</h1>
+    <p class="lead" style="margin-bottom:36px">Protected updates for approved B4T partners.</p>
+    <div class="portal-grid">
+      <nav class="side">
+        <a href="#reports" class="active">Country reports</a>
+        <a href="#pipeline">Investment pipeline</a>
+        <a href="#prayer">Prayer needs</a>
+        <a href="#resources">Training resources</a>
+      </nav>
+      <div>
+        <section class="panel" id="reports">
+          <h3>Country reports <span class="lock-badge">🔒 Confidential</span></h3>
+          <div class="row"><div><b>Silk Road — quarterly update</b><div class="muted" style="font-size:.88rem">Region leader report</div></div><span class="pill silk">Silk Road</span></div>
+          <div class="row"><div><b>Africa — new Developer onboarding</b><div class="muted" style="font-size:.88rem">Operations update</div></div><span class="pill africa">Africa</span></div>
+          <div class="row"><div><b>Asia Pacific — agriculture cluster review</b><div class="muted" style="font-size:.88rem">Impact assessment</div></div><span class="pill asia">Asia Pacific</span></div>
+        </section>
+        <section class="panel" id="pipeline">
+          <h3>Investment pipeline</h3>
+          <div class="row"><div><b>Business A — food processing</b><div class="muted" style="font-size:.88rem">Due diligence in progress</div></div><span class="pill">$15k–$30k</span></div>
+          <div class="row"><div><b>Business B — logistics</b><div class="muted" style="font-size:.88rem">Plan approved, seeking co-investor</div></div><span class="pill">$40k</span></div>
+        </section>
+        <section class="panel" id="prayer">
+          <h3>Prayer needs</h3>
+          <div class="row"><div>Wisdom for entrepreneurs navigating new regulations.</div><span class="muted" style="font-size:.85rem">Placeholder</span></div>
+          <div class="row"><div>Protection and favour for teams in sensitive locations.</div><span class="muted" style="font-size:.85rem">Placeholder</span></div>
+        </section>
+        <section class="panel" id="resources">
+          <h3>Training resources</h3>
+          <div class="row"><div><b>Biblical Entrepreneurship curriculum</b></div><span class="btn btn-sm btn-ghost">Download</span></div>
+          <div class="row"><div><b>Business plan template</b></div><span class="btn btn-sm btn-ghost">Download</span></div>
+          <div class="row"><div><b>Developer handbook</b></div><span class="btn btn-sm btn-ghost">Download</span></div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

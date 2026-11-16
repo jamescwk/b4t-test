@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B4T — Business in the Heart of Missions</title>
+<meta name="description" content="B4T (Business for Transformation) multiplies Kingdom businesses in poor and unreached communities across Africa, the Silk Road and Asia Pacific.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f1c2e'/><text x='32' y='42' font-size='26' text-anchor='middle' fill='%23e2b469' font-family='Georgia' font-weight='700'>B4T</text></svg>">
+</head>
+<body>
+
+<div class="proto-banner">Design prototype for review — sample data shown where marked. Forms do not submit. <a href="https://b4t.org" target="_blank" rel="noopener">View current site ↗</a></div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="B4T home">
+      <span class="brand-mark">B4T</span>
+      <span>Business for Transformation<small>Business in the heart of missions</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#regions">Regions</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#connect">Connect</a></li>
+      <li><a href="#training">Training</a></li>
+      <li><a href="#stories">Stories</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn btn-ghost btn-sm guest-only" data-open="loginModal">Member login</button>
+      <button class="btn btn-ghost btn-sm" id="logoutBtn" style="display:none">Sign out</button>
+      <a href="#updates" class="btn btn-primary btn-sm">Get updates</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <span class="eyebrow">Business as Mission · Since 2010</span>
+    <h1>Business in the <em>heart</em><br>of missions.</h1>
+    <p class="lead">We identify and equip national, believing entrepreneurs to build sustainable Kingdom businesses — creating jobs, dignity and lasting transformation in poor and unreached communities.</p>
+    <div class="hero-ctas">
+      <a href="#involved" class="btn btn-primary">Get involved</a>
+      <a href="#about" class="btn btn-ghost">What is B4T?</a>
+    </div>
+
+    <div class="region-buttons" role="list">
+      <button class="region-btn africa" data-region="africa" role="listitem">
+        <span class="arrow">→</span><div class="dot"></div>
+        <h3>Africa</h3><p>Ghana · South Africa · Uganda · Zambia</p>
+      </button>
+      <button class="region-btn silk" data-region="silk" role="listitem">
+        <span class="arrow">→</span><div class="dot"></div>
+        <h3>Silk Road</h3><p>Kazakhstan · Kyrgyzstan · Uzbekistan</p>
+      </button>
+      <button class="region-btn asia" data-region="asia" role="listitem">
+        <span class="arrow">→</span><div class="dot"></div>
+        <h3>Asia</h3><p>Cambodia · Indonesia · Myanmar · Nepal</p>
+      </button>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>2010</b><span>Founded</span></div>
+      <div class="stat"><b>3</b><span>Regions</span></div>
+      <div class="stat"><b>11+</b><span>Countries</span></div>
+      <div class="stat"><b>$5k–100k</b><span>Investment per business</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- REGIONS -->
+<section class="section soft" id="regions">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Where we work</span>
+      <h2>Three regions. One mission.</h2>
+      <p class="lead">Each region is led by a practitioner who lives and works on the ground. Choose a region to see where we operate, who leads the work and how you can help.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="africa">Africa</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="silk">Silk Road</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="asia">Asia Pacific</button>
+    </div>
+
+    <div class="region-panel" id="panel-africa" role="tabpanel">
+      <div>
+        <span class="tag" style="background:var(--africa)">Africa Region</span>
+        <h3 style="font-size:1.9rem">Building job-makers across Africa</h3>
+        <p class="muted">From sewage trucks in Uganda to belt sellers in Kumasi, our African entrepreneurs are building businesses that serve their communities and carry the Gospel into everyday life.</p>
+        <div class="chips"><span class="chip">Ghana</span><span class="chip">South Africa</span><span class="chip">Uganda</span><span class="chip">Zambia</span></div>
+        <ul class="region-focus">
+          <li>Biblical Entrepreneurship Training (e.g. Durban, South Africa)</li>
+          <li>On-the-ground support from local B4T Developers</li>
+          <li>Seed and growth investment for micro &amp; small enterprises</li>
+        </ul>
+        <a href="#connect" class="btn btn-dark btn-sm" data-filter-region="africa">See needs in Africa →</a>
+      </div>
+      <div class="leader-card">
+        <div class="leader"><div class="avatar" style="background:var(--africa)">JN</div><div><b>Jakes Naudé</b><br><span class="muted" style="font-size:.88rem">Africa Region Leader · South Africa</span></div></div>
+        <p class="muted" style="font-size:.93rem">Oversees day-to-day operations across Africa. Joined B4T in 2008 after a career as a futures commodity trader on the JSE, and previously ran a business in South Asia.</p>
+      </div>
+    </div>
+
+    <div class="region-panel" id="panel-silk" role="tabpanel" hidden>
+      <div>
+        <span class="tag" style="background:var(--silk)">Silk Road Region</span>
+        <h3 style="font-size:1.9rem">Enterprise along the ancient trade routes</h3>
+        <p class="muted">In Central Asia, Kingdom businesses open doors where traditional mission cannot. Some of this region's work is sensitive — detailed updates are shared with registered members only.</p>
+        <div class="chips"><span class="chip">Kazakhstan</span><span class="chip">Kyrgyzstan</span><span class="chip">Uzbekistan</span></div>
+        <ul class="region-focus">
+          <li>Tourism, media and service businesses</li>
+          <li>Mentoring of national entrepreneurs</li>
+          <li><span class="lock-badge">🔒 Members only</span> Country-level reports &amp; prayer needs</li>
+        </ul>
+        <a href="#connect" class="btn btn-dark btn-sm" data-filter-region="silk">See needs on the Silk Road →</a>
+      </div>
+      <div class="leader-card">
+        <div class="leader"><div class="avatar" style="background:var(--silk)">AH</div><div><b>Andy H</b><br><span class="muted" style="font-size:.88rem">Silk Road Region Leader · Central Asia</span></div></div>
+        <p class="muted" style="font-size:.93rem">Living and working in Central Asia since 2007. Electrical engineer (BSc Hons) with an MA in Leadership; formerly with London start-ups and Hewlett Packard. Runs an adventure tourism company.</p>
+      </div>
+    </div>
+
+    <div class="region-panel" id="panel-asia" role="tabpanel" hidden>
+      <div>
+        <span class="tag" style="background:var(--asia)">Asia Pacific Region</span>
+        <h3 style="font-size:1.9rem">Transforming communities across Asia</h3>
+        <p class="muted">From paddy farmers to small manufacturers, Asia Pacific entrepreneurs are building sustainable livelihoods with Kingdom values at the core.</p>
+        <div class="chips"><span class="chip">Cambodia</span><span class="chip">Indonesia</span><span class="chip">Myanmar</span><span class="chip">Nepal</span></div>
+        <ul class="region-focus">
+          <li>Agriculture and food-security enterprises</li>
+          <li>Developer-led business coaching</li>
+          <li>Investor partnerships from across the region</li>
+        </ul>
+        <a href="#connect" class="btn btn-dark btn-sm" data-filter-region="asia">See needs in Asia →</a>
+      </div>
+      <div class="leader-card">
+        <div class="leader"><div class="avatar" style="background:var(--asia)">RY</div><div><b>Raymond Yap</b><br><span class="muted" style="font-size:.88rem">Co-founder &amp; Asia Pacific Leader · Kuala Lumpur</span></div></div>
+        <p class="muted" style="font-size:.93rem">Around 30 years of international business experience, including as global CEO of a billion-dollar multinational before taking early retirement to co-found B4T.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What is B4T</span>
+      <h2>Kingdom business, fulfilling its role in the Great Commission.</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <div class="vm-card"><h4>Vision</h4><p>To see Kingdom Business fulfil its vital role in the Great Commission.</p></div>
+        <div class="vm-card"><h4>Mission</h4><p>To empower indigenous believers and churches for the work of ministry, by multiplying Kingdom businesses in poor and unreached communities.</p><cite>Ephesians 4:12</cite></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:20px">Our story</h3>
+        <ol class="timeline">
+          <li><b>2008</b><span class="muted">Early Business for Transformation work within OM; Jakes Naudé joins the effort.</span></li>
+          <li><b>2010</b><span class="muted">Co-founders Raymond Yap and Mike Lyth bring OM's Business as Mission efforts onto a common, more effective platform — B4T.</span></li>
+          <li><b>Pioneering years</b><span class="muted">Testing different ways of working to find what is most effective — "a road less travelled".</span></li>
+          <li><b>Today</b><span class="muted">Hundreds of Kingdom SMEs started across Africa, the Silk Road and Asia Pacific.</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <h3 class="subhead">Our values</h3>
+    <div class="grid-3">
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>We listen to Jesus</h3><p class="muted">B4T rests on the Lord's leadership. We consult Him often and rely on Him fully.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div><h3>We trust one another</h3><p class="muted">Trust built on competence and on following through on our commitments.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div><h3>We do things well</h3><p class="muted">"Our work is our worship" — reflecting God's glory and perfect work.</p></div>
+    </div>
+
+    <h3 class="subhead">The B4T ecosystem</h3>
+    <div class="grid-4">
+      <div class="card"><div class="icon">01</div><h3>Developers</h3><p class="muted">On-the-ground support for entrepreneurs.</p></div>
+      <div class="card"><div class="icon">02</div><h3>Training</h3><p class="muted">Biblical Entrepreneurship Training.</p></div>
+      <div class="card"><div class="icon">03</div><h3>Investors</h3><p class="muted">Patient capital from $5k to $100k.</p></div>
+      <div class="card"><div class="icon">04</div><h3>Mentors</h3><p class="muted">Coaches and subject matter experts.</p></div>
+    </div>
+
+    <h3 class="subhead">Four dimensions of impact</h3>
+    <div class="grid-4">
+      <div class="card"><h3>Spiritual</h3><p class="muted">Sharing faith naturally within business relationships.</p></div>
+      <div class="card"><h3>Economic</h3><p class="muted">Dignity through employment, ethical practice and empowerment.</p></div>
+      <div class="card"><h3>Social</h3><p class="muted">Community involvement and participation in public life.</p></div>
+      <div class="card"><h3>Environmental</h3><p class="muted">Stewardship of products, resources and waste.</p></div>
+    </div>
+
+    <h3 class="subhead" id="team">Who's who</h3>
+    <div class="grid-3">
+      <div class="card team-card"><div class="avatar" style="background:var(--asia)">RY</div><h3>Raymond Yap</h3><div class="role">Co-founder · Asia Pacific Region Leader</div><p class="muted">Based in Kuala Lumpur. ~30 years in international business; former global CEO of a billion-dollar multinational.</p></div>
+      <div class="card team-card"><div class="avatar" style="background:var(--africa)">JN</div><h3>Jakes Naudé</h3><div class="role">Africa Region Leader</div><p class="muted">Based in South Africa. Oversees B4T's day-to-day operations across Africa; with B4T since 2008.</p></div>
+      <div class="card team-card"><div class="avatar" style="background:var(--silk)">AH</div><h3>Andy H</h3><div class="role">Silk Road Region Leader</div><p class="muted">In Central Asia since 2007. Engineer, leader and tourism entrepreneur; leads B4T's media team.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section class="section soft" id="involved">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Get involved</span>
+      <h2>There's a role for you.</h2>
+      <p class="lead">Whatever your gifts, you can help multiply Kingdom businesses.</p>
+    </div>
+    <div class="grid-4" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr))">
+      <div class="card role-card"><h3>Entrepreneur</h3><p class="muted">Job-makers with a heart for God and others, the head to plan and the hands to run a sustainable business.</p><a href="#contact" data-role="Entrepreneur">Apply →</a></div>
+      <div class="card role-card"><h3>Developer</h3><p class="muted">Connect entrepreneurs and investors — researching businesses and walking alongside founders.</p><a href="#contact" data-role="Developer">Learn more →</a></div>
+      <div class="card role-card"><h3>Investor</h3><p class="muted">Christian business people creating lasting impact through partnerships that benefit workers and communities.</p><a href="#contact" data-role="Investor">Partner with us →</a></div>
+      <div class="card role-card"><h3>Mentor</h3><p class="muted">Coach entrepreneurs through the realities of starting and growing a business.</p><a href="#contact" data-role="Business Mentor">Volunteer →</a></div>
+      <div class="card role-card"><h3>Subject Matter Expert</h3><p class="muted">Share specialist expertise — finance, agriculture, tech, legal — with entrepreneurs on the ground.</p><a href="#connect">Offer expertise →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT PLATFORM -->
+<section class="section" id="connect">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Connect platform</span>
+      <h2>Connecting resources to needs.</h2>
+      <p class="lead">Entrepreneurs and Developers post needs; investors, mentors and experts offer resources. We help match them. Sensitive listings are visible to registered members only.</p>
+    </div>
+
+    <div class="sample-note">⚑ Sample listings for illustration only</div>
+
+    <div class="connect-bar">
+      <div class="filters">
+        <select id="fRegion" aria-label="Filter by region">
+          <option value="all">All regions</option><option value="africa">Africa</option><option value="silk">Silk Road</option><option value="asia">Asia Pacific</option>
+        </select>
+        <select id="fType" aria-label="Filter by category">
+          <option value="all">All categories</option><option value="Capital">Capital</option><option value="Mentoring">Mentoring</option><option value="Expertise">Expertise</option><option value="Equipment">Equipment</option><option value="Prayer">Prayer</option>
+        </select>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-dark btn-sm" data-open="postModal" data-kind="need">+ Post a need</button>
+        <button class="btn btn-primary btn-sm" data-open="postModal" data-kind="resource">+ Offer a resource</button>
+      </div>
+    </div>
+
+    <div class="connect-cols">
+      <div><div class="col-head"><h3>Needs</h3><span class="count" id="needCount">0</span></div><div class="list" id="needList"></div></div>
+      <div><div class="col-head"><h3>Resources offered</h3><span class="count" id="resCount">0</span></div><div class="list" id="resList"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINING -->
+<section class="section soft" id="training">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Training schedule</span>
+      <h2>Biblical Entrepreneurship Training.</h2>
+      <p class="lead">Practical, faith-integrated business training for entrepreneurs, Developers and church leaders.</p>
+    </div>
+    <div class="sample-note">⚑ Sample dates and venues — to be confirmed by the B4T team</div>
+    <div class="tabs" id="trainingFilter">
+      <button class="tab" aria-selected="true" data-t="all">All</button>
+      <button class="tab" aria-selected="false" data-t="africa">Africa</button>
+      <button class="tab" aria-selected="false" data-t="silk">Silk Road</button>
+      <button class="tab" aria-selected="false" data-t="asia">Asia Pacific</button>
+      <button class="tab" aria-selected="false" data-t="online">Online</button>
+    </div>
+    <table class="training-table">
+      <thead><tr><th>Date</th><th>Programme</th><th>Venue</th><th>Format</th><th></th></tr></thead>
+      <tbody id="trainingBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- STORIES -->
+<section class="section" id="stories">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Kingdom impact stories</span>
+      <h2>Testimonies from the field.</h2>
+      <p class="lead">Real people, real businesses, real transformation.</p>
+    </div>
+    <div class="grid-3">
+      <article class="story">
+        <div class="story-visual" style="background:linear-gradient(135deg,#c4612f,#7a2f12)"><span class="pill">Uganda · Entrepreneur</span></div>
+        <div class="story-body"><h3>John Ssebatta's sewage truck</h3><p>B4T connected with John in early 2018, when he was driving a truck for someone else. Read how his sanitation business story unfolded.</p><a href="https://b4t.org/kingdom-impact-stories/" target="_blank" rel="noopener">Read story →</a></div>
+      </article>
+      <article class="story">
+        <div class="story-visual" style="background:linear-gradient(135deg,#1f7a8c,#0b3a44)"><span class="pill">Asia Pacific · Agriculture</span></div>
+        <div class="story-body"><h3>15 paddy farmers in despair</h3><p>B4T Developer Laval Yau heard of a group of Christian paddy farmers who were depressed and in despair — and took action.</p><a href="https://b4t.org/kingdom-impact-stories/" target="_blank" rel="noopener">Read story →</a></div>
+      </article>
+      <article class="story">
+        <div class="story-visual" style="background:linear-gradient(135deg,#c8903a,#6d4a12)"><span class="pill">Ghana · Retail</span></div>
+        <div class="story-body"><h3>Susan the belt seller</h3><p>A part-time domestic worker in Kumasi, responsible for supporting others, Susan built a small trading business selling belts.</p><a href="https://b4t.org/kingdom-impact-stories/" target="_blank" rel="noopener">Read story →</a></div>
+      </article>
+      <article class="story">
+        <div class="story-visual" style="background:linear-gradient(135deg,#22324a,#0c1626)"><span class="pill">Early days · Tailoring</span></div>
+        <div class="story-body"><h3>Tailors meet Jesus in a business</h3><p>In B4T's early days, Jakes Naudé's tailoring business became a place where workers encountered the Gospel.</p><a href="https://b4t.org/kingdom-impact-stories/" target="_blank" rel="noopener">Read story →</a></div>
+      </article>
+      <article class="story">
+        <div class="story-visual" style="background:linear-gradient(135deg,#1f6f6b,#0c3634)"><span class="pill">Durban · Training</span></div>
+        <div class="story-body"><h3>A successful B4T training</h3><p>B4T held a business training in Durban, South Africa, covering the biblical foundations of business and entrepreneurship.</p><a href="https://b4t.org/kingdom-impact-stories/" target="_blank" rel="noopener">Read story →</a></div>
+      </article>
+      <article class="story">
+        <div class="story-visual" style="background:linear-gradient(135deg,#7a5aa6,#3a2560)"><span class="pill">South Africa · Partnerships</span></div>
+        <div class="story-body"><h3>Strengthening partnerships</h3><p>With a new B4T Developer in Durban, B4T has seen growth in South Africa through intentional partnerships.</p><a href="https://b4t.org/kingdom-impact-stories/" target="_blank" rel="noopener">Read story →</a></div>
+      </article>
+    </div>
+    <div class="quote-band">
+      <div class="qmark">“</div>
+      <div><blockquote>We are looking for job makers rather than job seekers — people with a heart for God and others, the head to plan a business and the hands to run it.</blockquote><p class="muted" style="margin:12px 0 0;color:#a9b5c6">— The B4T Entrepreneur profile</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERS -->
+<section class="section soft" id="members">
+  <div class="container members-grid">
+    <div>
+      <span class="eyebrow">Members area</span>
+      <h2>Some stories can't be told in public.</h2>
+      <p class="lead">Much of our work happens in sensitive contexts. Registered partners — investors, Developers, mentors and prayer partners — can access protected updates once their membership is approved.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+        <button class="btn btn-dark guest-only" data-open="loginModal">Member login</button>
+        <button class="btn btn-ghost guest-only" data-open="joinModal">Request access</button>
+        <a href="members.html" class="btn btn-primary" style="display:none" id="toPortal">Open member portal →</a>
+      </div>
+    </div>
+    <div class="locked-list">
+      <div class="locked-item"><div class="icon">🔒</div><div><h4>Country reports &amp; security briefings</h4><p>Region-specific updates for sensitive locations.</p></div></div>
+      <div class="locked-item"><div class="icon">🔒</div><div><h4>Investment pipeline</h4><p>Business plans and due-diligence summaries for vetted investors.</p></div></div>
+      <div class="locked-item"><div class="icon">🔒</div><div><h4>Prayer needs</h4><p>Confidential requests from entrepreneurs and Developers.</p></div></div>
+      <div class="locked-item"><div class="icon">🔒</div><div><h4>Training resources</h4><p>Curriculum, templates and recorded sessions.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- UPDATES / SUBSCRIBE -->
+<section class="section dark" id="updates">
+  <div class="container subscribe">
+    <div>
+      <span class="eyebrow">Stay informed</span>
+      <h2>Follow the developments.</h2>
+      <p class="lead">Choose what you'd like to hear about and how often. We'll keep you posted on new businesses, training dates and ways to help.</p>
+      <ul class="benefits">
+        <li>Regional updates from Africa, the Silk Road and Asia</li>
+        <li>Training dates announced before registration opens</li>
+        <li>New needs matched to your interests</li>
+        <li>Unsubscribe any time</li>
+      </ul>
+    </div>
+    <form class="form-card" id="subscribeForm">
+      <h3>Sign up for updates</h3>
+      <div class="form-row">
+        <div><label for="sName">Name</label><input id="sName" required></div>
+        <div><label for="sEmail">Email</label><input id="sEmail" type="email" required></div>
+      </div>
+      <label>Regions of interest</label>
+      <div class="check-group">
+        <label><input type="checkbox" checked> Africa</label>
+        <label><input type="checkbox" checked> Silk Road</label>
+        <label><input type="checkbox" checked> Asia Pacific</label>
+      </div>
+      <label>Topics</label>
+      <div class="check-group">
+        <label><input type="checkbox" checked> Stories</label>
+        <label><input type="checkbox"> Training</label>
+        <label><input type="checkbox"> Investment</label>
+        <label><input type="checkbox"> Prayer</label>
+      </div>
+      <div class="form-field"><label for="sFreq">How often?</label>
+        <select id="sFreq"><option>Monthly digest</option><option>Quarterly highlights</option><option>As it happens</option></select></div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center">Keep me informed</button>
+      <p class="fine">We respect your privacy. See our Privacy Policy.</p>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow">Contact us</span>
+      <h2>Let's talk.</h2>
+      <p class="lead">Whether you're an entrepreneur with a plan, an investor looking for impact, or a church wanting to partner — we'd love to hear from you.</p>
+      <ul class="contact-list">
+        <li><div class="icon">✉</div><div><b>General enquiries</b><br><span class="muted">info@b4t.org <em>(placeholder)</em></span></div></li>
+        <li><div class="icon">🌍</div><div><b>Regional teams</b><br><span class="muted">Africa · Silk Road · Asia Pacific (Kuala Lumpur)</span></div></li>
+        <li><div class="icon">🤝</div><div><b>Part of OM</b><br><span class="muted">B4T is the Business for Transformation ministry of Operation Mobilisation</span></div></li>
+      </ul>
+      <div class="socials">
+        <a href="https://www.facebook.com/Business4Transform" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/business4transformation" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        <a href="https://za.linkedin.com/company/b4t-org" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://www.youtube.com/@user-nx2bk8pe3c" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+    <form class="form-card" style="box-shadow:var(--shadow);border:1px solid var(--line)" id="contactForm">
+      <div class="form-row">
+        <div><label for="cFirst">First name</label><input id="cFirst" required></div>
+        <div><label for="cLast">Surname</label><input id="cLast"></div>
+      </div>
+      <div class="form-row">
+        <div><label for="cEmail">Email</label><input id="cEmail" type="email" required></div>
+        <div><label for="cRegion">Region</label><select id="cRegion"><option>Any</option><option>Africa</option><option>Silk Road</option><option>Asia Pacific</option></select></div>
+      </div>
+      <div class="form-field"><label for="cRole">I'm interested in being a…</label>
+        <select id="cRole"><option>Entrepreneur</option><option>Developer</option><option>Investor</option><option>Business Mentor</option><option>Subject Matter Expert</option><option>Prayer partner</option><option>Other</option></select></div>
+      <div class="form-field"><label for="cMsg">Message</label><textarea id="cMsg" rows="4"></textarea></div>
+      <button class="btn btn-dark" style="width:100%;justify-content:center">Send message</button>
+      <p class="fine">By submitting you agree to our Privacy Policy and Child, Women &amp; Vulnerable People Protection Policy.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brand" style="color:#fff;margin-bottom:14px"><span class="brand-mark">B4T</span><span>Business for Transformation</span></a>
+        <p style="max-width:320px">Multiplying Kingdom businesses in poor and unreached communities. A ministry of OM.</p>
+      </div>
+      <div><h5>Regions</h5><ul><li><a href="#regions" data-region-link="africa">Africa</a></li><li><a href="#regions" data-region-link="silk">Silk Road</a></li><li><a href="#regions" data-region-link="asia">Asia Pacific</a></li></ul></div>
+      <div><h5>About</h5><ul><li><a href="#about">What is B4T</a></li><li><a href="#team">Who's who</a></li><li><a href="#stories">Stories</a></li><li><a href="#training">Training</a></li></ul></div>
+      <div><h5>Connect</h5><ul><li><a href="#connect">Needs &amp; resources</a></li><li><a href="#members">Members area</a></li><li><a href="#updates">Get updates</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 B4T — Business for Transformation</span>
+      <span><a href="https://b4t.org/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> · Protection Policy</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Login modal -->
+<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="eyebrow">Members only</span>
+    <h3 id="loginTitle" style="font-size:1.6rem">Sign in</h3>
+    <p class="muted" style="font-size:.9rem">Prototype: use any email and passcode <b>b4t</b>.</p>
+    <form id="loginForm">
+      <div class="form-field"><label for="lEmail">Email</label><input id="lEmail" type="email" required></div>
+      <div class="form-field"><label for="lPass">Passcode</label><input id="lPass" type="password" required></div>
+      <p id="loginErr" style="color:#b3261e;font-size:.85rem;display:none">Incorrect passcode.</p>
+      <button class="btn btn-dark" style="width:100%;justify-content:center">Sign in</button>
+    </form>
+    <p class="fine">No account? <a href="#" data-switch="joinModal">Request access</a></p>
+  </div>
+</div>
+
+<!-- Join modal -->
+<div class="modal" id="joinModal" role="dialog" aria-modal="true" aria-labelledby="joinTitle">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="eyebrow">Membership</span>
+    <h3 id="joinTitle" style="font-size:1.6rem">Request member access</h3>
+    <p class="muted" style="font-size:.9rem">Access is approved by a regional leader to protect people working in sensitive locations.</p>
+    <form class="js-proto-form">
+      <div class="form-field"><label>Full name</label><input required></div>
+      <div class="form-field"><label>Email</label><input type="email" required></div>
+      <div class="form-field"><label>Church / organisation</label><input></div>
+      <div class="form-field"><label>Referred by (B4T contact)</label><input></div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center">Submit request</button>
+    </form>
+  </div>
+</div>
+
+<!-- Post modal -->
+<div class="modal" id="postModal" role="dialog" aria-modal="true" aria-labelledby="postTitle">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <span class="eyebrow">Connect platform</span>
+    <h3 id="postTitle" style="font-size:1.6rem">Post a need</h3>
+    <form id="postForm">
+      <div class="form-field"><label for="pTitle">Title</label><input id="pTitle" required placeholder="e.g. Bookkeeping mentor for bakery"></div>
+      <div class="form-row">
+        <div><label for="pRegion">Region</label><select id="pRegion"><option value="africa">Africa</option><option value="silk">Silk Road</option><option value="asia">Asia Pacific</option></select></div>
+        <div><label for="pType">Category</label><select id="pType"><option>Capital</option><option>Mentoring</option><option>Expertise</option><option>Equipment</option><option>Prayer</option></select></div>
+      </div>
+      <div class="form-field"><label for="pDesc">Details</label><textarea id="pDesc" rows="3"></textarea></div>
+      <label style="display:flex;gap:8px;align-items:center;font-weight:500"><input type="checkbox" id="pSensitive" style="width:auto"> Sensitive — show to members only</label>
+      <button class="btn btn-dark" style="width:100%;justify-content:center;margin-top:14px">Publish</button>
+    </form>
+  </div>
+</div>
+
+<!-- Updates prompt -->
+<aside class="update-prompt" id="updatePrompt" aria-live="polite">
+  <button class="x" aria-label="Dismiss">✕</button>
+  <h4>Want to hear how it unfolds?</h4>
+  <p>Get regional updates, training dates and new needs — monthly, in your inbox.</p>
+  <a href="#updates" class="btn btn-primary btn-sm">Sign me up</a>
+</aside>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
