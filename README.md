@@ -14,6 +14,7 @@ A static, front-end-only redesign concept for [b4t.org](https://b4t.org), built 
 | 6. Testimonies | `#stories` — drawn from the current Kingdom Impact Stories |
 | 7. What is B4T (history, vision, mission, team) | `#about` — vision, mission, timeline, values, ecosystem, impact, who's who |
 | 8. Contact us | `#contact` — form with role/region, social links |
+| How we operate | `how-we-operate.html` — Developer, Entrepreneur, Investor, Kingdom Impact (from b4t.org) |
 
 ## Prototype notes
 
@@ -27,6 +28,7 @@ A static, front-end-only redesign concept for [b4t.org](https://b4t.org), built 
 
 ```
 index.html        Public site (single page)
+how-we-operate.html  Roles & processes (Developer / Entrepreneur / Investor)
 members.html      Member portal mock (redirects if not "signed in")
 styles.css
 app.js
