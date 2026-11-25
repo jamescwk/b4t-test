@@ -316,3 +316,7 @@ select,input,textarea{border-color:#8091a7}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }
+
+/* Hero tagline sits just under the headline */
+.hero h1{margin-bottom:.25em}
+.hero .hero-tagline{display:block;margin-bottom:24px}
