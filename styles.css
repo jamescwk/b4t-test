@@ -320,3 +320,6 @@ select,input,textarea{border-color:#8091a7}
 /* Hero tagline sits just under the headline */
 .hero h1{margin-bottom:.25em}
 .hero .hero-tagline{display:block;margin-bottom:24px}
+
+/* Nav buttons stay on one line and aligned */
+.nav-actions .btn{white-space:nowrap}
