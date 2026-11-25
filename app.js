@@ -70,7 +70,7 @@
   $$('#regions .tab').forEach(t => t.addEventListener('click', () => selectRegion(t.dataset.tab)));
   $$('.region-btn, [data-region-link]').forEach(b => b.addEventListener('click', () => {
     selectRegion(b.dataset.region || b.dataset.regionLink);
-    if (b.classList.contains('region-btn')) $('#regions').scrollIntoView({ behavior: 'smooth' });
+    if (b.classList.contains('region-btn')) $('#regions').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }));
   $$('[data-filter-region]').forEach(a => a.addEventListener('click', () => {
     const s = $('#fRegion'); if (s) { s.value = a.dataset.filterRegion; renderConnect(); }

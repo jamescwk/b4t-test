@@ -296,3 +296,23 @@ body.is-member .guest-only{display:none}
   .section{padding:72px 0}
   .hero{padding:72px 0 56px}
 }
+
+/* --- Accessibility floor (review round 2) --- */
+:root{--gold-ink:#8a5a14}
+/* Gold text on light backgrounds failed AA (2.5-2.8:1); darker gold is 5.4-5.9:1. Dark sections keep the bright gold. */
+.eyebrow,.vm-card h4,.socials a:hover{color:var(--gold-ink)}
+.hero .eyebrow,.page-hero .eyebrow,.section.dark .eyebrow,.site-footer .eyebrow{color:var(--gold)}
+.checklist li::before{color:var(--gold-ink)}
+/* White on gold was 2.8:1; ink on gold is 6.1:1 */
+.btn-primary,.proto-banner{color:var(--ink)}
+/* Visible keyboard focus on light and dark backgrounds */
+:focus-visible{outline:2px solid #fff;outline-offset:2px;box-shadow:0 0 0 2px var(--ink)}
+select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #fff;outline-offset:2px;box-shadow:0 0 0 2px var(--ink);border-color:var(--ink)}
+/* Form field borders: 3.2:1 against white */
+select,input,textarea{border-color:#8091a7}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none}
+.skip-link:focus{top:12px}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
